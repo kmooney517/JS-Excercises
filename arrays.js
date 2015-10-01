@@ -94,7 +94,7 @@ function findIsWords(strings) {
 
 // function jsInstructors(instructors) {
 //   var jsInstruct = instructors.filter(function(eachInstructor){
-//       return eachInstructor.indexOf({name: 'JavaScript'}) >=0;
+//       return { name : eachInstructor.indexOf('JavaScript')} >=0;
 //   });
 //   return jsInstruct;
 // };

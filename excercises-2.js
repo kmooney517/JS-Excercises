@@ -64,7 +64,7 @@ function rovarspraket(phrase){
       expandedArray.push(character);
     }
     else {
-      expandedArray.push(character + character + "o");
+      expandedArray.push(character + "o" + character);
     };
   });
   return expandedArray.join("");
