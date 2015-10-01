@@ -69,20 +69,53 @@ function findOddNumbers(numbers) {
 // 5. Find words that contain `is`
 // ---------------------------
 function findIsWords(strings) {
-  var splitWords = strings.split("");
-
-
+  var isWords = strings.filter(function(eachString){
+    return eachString.indexOf('is') >= 0; //cant figure out why this has to be zero to work.
+  });
+  return isWords;
 };
 
 
 // ---------------------------
 // 5. Join Both Arrays Together
 // ---------------------------
-function joinArrays(strings, numbers) {
-  var bothArrays = strings.push(numbers);
-}
+
+  var bothArrays = strings.concat(numbers); //googled MDN to find the .concat method
+    console.log(bothArrays);
+
 
 // ---------------------------
 // 6. Use the Instructors array and find all that teach JavaScript, 
 //    then sort them alphabetically
 // ---------------------------
+
+
+//I know this doesn't work - but this is how far I got.
+
+// function jsInstructors(instructors) {
+//   var jsInstruct = instructors.filter(function(eachInstructor){
+//       return eachInstructor.indexOf({name: 'JavaScript'}) >=0;
+//   });
+//   return jsInstruct;
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
