@@ -47,26 +47,40 @@ function findLongestString(strings) {
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
-
+function findEvenNumbers(numbers) {
+  var evenNumbers = numbers.filter(function(number){
+    return (number%2) === 0;
+  });
+  return evenNumbers;
+};
 
 
 // ---------------------------
 // 4. Find odd numbers
 // ---------------------------
-
+function findOddNumbers(numbers) {
+  var oddNumbers = numbers.filter(function(number){
+    return (number%2) === 1;
+  });
+  return oddNumbers;
+};
 
 // ---------------------------
 // 5. Find words that contain `is`
 // ---------------------------
+function findIsWords(strings) {
+  var splitWords = strings.split("");
 
+
+};
 
 
 // ---------------------------
 // 5. Join Both Arrays Together
 // ---------------------------
-
-
-
+function joinArrays(strings, numbers) {
+  var bothArrays = strings.push(numbers);
+}
 
 // ---------------------------
 // 6. Use the Instructors array and find all that teach JavaScript, 
